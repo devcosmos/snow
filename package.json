@@ -1,0 +1,28 @@
+{
+  "name": "snowflakes",
+  "version": "1.0.0",
+  "licenses": [],
+  "description": "Base snowflakes",
+  "author": "devcosmos",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "eslint": "^8.31.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss": "^8.4.20",
+    "postcss-loader": "^7.0.2",
+    "prettier": "^2.8.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-remove-empty-scripts": "^1.0.1"
+  }
+}
