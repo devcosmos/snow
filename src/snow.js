@@ -18,7 +18,7 @@ export default class Snow {
 
     this.icon = icon;
     this.showSnowflakes = showSnowflakes;
-    this.countSnowflake = this.windowInnerWidth > 1024 ? 100 : 50;
+    this.countSnowflake = this.windowInnerWidth > 1024 ? 70 : 30;
   
     this.init();
   }
@@ -41,10 +41,12 @@ export default class Snow {
   createSnowflakes() {
     for (let i = 0; i < this.countSnowflake; i++) {
       const snowflake = document.createElement('span');
-
+      
       snowflake.className = 'snowflake';
       snowflake.innerHTML = this.icon;
-      this.$snowflakesBox.appendChild(snowflake);
+      setTimeout(() => {
+        this.$snowflakesBox.appendChild(snowflake);
+      }, i * 150);
     }
   }
 }
